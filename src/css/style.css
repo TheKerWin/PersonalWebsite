@@ -1,0 +1,28 @@
+body{
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header #branding{
+  float:left;
+}
+
+#showcase{
+  min-height: 300px;
+  background:url('../img/Business.jpeg') no-repeat 0 -350px;
+  text-align: center;
+  color: #ffffff;
+}
