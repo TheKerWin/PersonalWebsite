@@ -1,11 +1,11 @@
 body{
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color: #;
 }
 .container{
   width: 90%;
-  margin: auto;
+  margin:inherit;
 
 }
 header{
@@ -13,7 +13,7 @@ header{
   color:#ffffff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #e8491d 4px solid;
 }
 header a{
   color: #ffffff;
@@ -36,6 +36,7 @@ header #bigbrand{
 }
 header #bigbrand h1{
   margin: 0px;
+
 }
 
 header nav{
@@ -45,9 +46,11 @@ header nav{
 
 #showcase{
   min-height: 300px;
+  padding-top: 30px;
   background:url('../img/Business.jpeg') no-repeat 0 -350px;
   text-align: center;
   color: #ffffff;
+  border-bottom: #e8491d 5px solid;
 }
 #showcase h1{
   margin-top: 50px;
@@ -60,30 +63,130 @@ header nav{
 }
 
 #boxes{
-  margin-top: 20px;
+  margin-top: 5px;
+
+  /*overflow: visible; */
+ /*#e6e6e6; */
+}
+#boxes .container{
+  float: left;
+  margin: inherit;
+  width: 76%;
+  background-color: #232234;
 }
 #boxes .box , .box2{
   float:left;
-  width: 40%;
-  padding:10px;
+  min-height: 600px;
+  min-width: 300px;
+  width: 50%;
+  padding:15px;
   text-align: center;
-  background-color: #e6e6e6;
-  border: #e8491d 3px solid;
+  color: #AACCFA;
+  background-color: #232234;
+
+
+  border-bottom : #e8491d 3px solid;
+  border-left : #e8491d 3px solid;
+  border-right:  #e8491d 3px solid;
+}
+#boxes .box2{
+  overflow: scroll;
 }
 
 #boxes .box img{
   width: 100%;
+
 }
 #boxes .box2 img{
 
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  flex-basis: auto;
+
+}
+#card .card{
+   float: right;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+}
+.card img{
+  width: 5px;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+button:hover, a:hover {
+  opacity: 0.7;
 }
 
+#sidebar img{
+  width: 50%;
+  height 50%;
+}
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+/* new contact me */
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* new contact me end */
 /* Media Queries */
 @media(max-width: 768px){
 
-  header #branding,
+  header #bigbrand,
   header nav,
   header nav li
   #newsletter h1,
@@ -112,6 +215,7 @@ header nav{
     margin-bottom: 5px;
   }
   .card {
+  display: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -123,5 +227,9 @@ header nav{
   color: grey;
   font-size: 18px;
 }
+.column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 
 }
