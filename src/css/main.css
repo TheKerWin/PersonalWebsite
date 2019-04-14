@@ -562,9 +562,10 @@ input[type="sibmit"]:hover {
   }
 
   .nav-list{
-    flex-direction: column; 
+    /*flex-direction: column; */
     font-size: 3rem; /* CHANGE THIS */
 
+    display: none;  /* comment this to get the nav list back */
   }
 
   li{
@@ -573,6 +574,7 @@ input[type="sibmit"]:hover {
 
   .nav-link{
     font-size: 4.5rem;
+    display: none;
   }
 
   .about-heading h1{
@@ -627,8 +629,13 @@ input[type="sibmit"]:hover {
     font-size: 1.4rem;
   }
 
-  .nav-link{
+  .nav-link a{
     font-size: 3.5rem;
+    display: none;
+
+  }
+  .nav-list{   /* Removes all the navigation on top */
+    display: none;
   }
 
   .about .container{
