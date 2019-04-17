@@ -607,7 +607,7 @@ input[type="sibmit"]:hover {
   }
 
   .timeline .date::before{
-    left: -19rem;
+    left: -18.5rem;
   }
   .timeline .date::after{
     left: -5.9rem;
